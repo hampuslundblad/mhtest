@@ -26,21 +26,25 @@ export const Footer = () => (
       <React.Fragment>
         <Container fluid className ="footer__container">
           <Container className ="d-flex justify-content-center">
+           <Row>
+            <Col>
             <Row>
-                <Col>
-                <h1> MARKENTREPENAD I GÖTEBORG AB</h1>
-                <p> Text här</p>
-                </Col>
-                <Col>
-                  <h1> Besöksadress</h1>
-                  <p> Text här</p>
-                </Col>
-                <Col>
-                <h1> Kontakt</h1>
-                <p> Telefon: 018 - 13 37 68</p>
-                <p> E-post: info@marksnickarna.se</p>
-                </Col>
+              <p> Markentrepenad AB </p>
+             </Row>
+
+             <Row>
+              <p> Besöksadress: Syltvägen 10 , 419 23 Göteborg</p>
             </Row>
+
+            <Row>
+              <p> Faktureringsadress: Syltvägen 10 , 419 23 Göteborg</p>
+            </Row>
+
+            <Row>
+              <p> Telefon: 018 - 13 37 60</p>
+            </Row>
+          </Col>
+          </Row>
         </Container>
       </Container>
   </React.Fragment>
