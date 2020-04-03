@@ -11,20 +11,29 @@ class Home extends Component {
       return (
           <React.Fragment>
               <ImageContainer/>
-              <Jumbotron/>
+              <Jumbotron text="Markentrepenad i Göteborg AB" />
         
               <Container>
                   <Row>
-                      <Col>
-                      <h1> Här kommer text</h1>
-                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></Col>
+                  <h1>Vad gör vi?</h1>
+                  </Row>
+                  <Row> 
                     <Col>
-                    <h1> Här kommer text</h1>
-                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has </p>
+                   
+                      <p> Markentreprenad i Uppsala AB arbetar med alla typer av mark- och anläggningsarbeten.</p>
+                      <strong> Vi utför allt från orörd mark till färdig markentreprenad.</strong>
+                      <p> Våra mest förekommande jobb är vid byggnation av radhusområden, industrihus och större BRF:er.</p>
                     </Col>
-
-
-                      <Col><h1> VIKTIGT TEXT</h1><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></Col>
+                    <Col>
+                
+                      <p> Vi gräver, schaktar, gör alla förekommande arbeten som rör grundarbeten med rörläggningar till färdig platta.</p>
+                      <p> Därtill gör vi kompletta finplaneringsjobb med allt från sten- och plattsättningar till murar och alla förekommande arbeten med utrustningar och grönytor. </p> 
+                    </Col>
+                    <Col>
+                     
+                        <p>Markentreprenad i Uppsala AB startades i liten skala av Martin Jansson år 2000. </p>
+                        <p>Idag sysselsätter företaget dagligen minst 30 personer och omsätter drygt 40 miljoner kronor.</p>
+                    </Col>
                   </Row>
               </Container>
          </React.Fragment>

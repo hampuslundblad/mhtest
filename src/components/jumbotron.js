@@ -1,13 +1,13 @@
 import React from 'react';
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import styled from 'styled-components';
-import treeImage from '../pictures/trad.jpg';
-// background: url(${treeImage}) no-repeat fixed bottom;
+
+
 const Styles = styled.div`
     .jumbo{
-        background-color:#fff;  
+        background-color:#4f4f4f;  
         background-size: cover;
-        color: #ccc;
+        color: #DCDCDC;
         height: 200px;
         position: relative;
         z-index:-2;
@@ -25,13 +25,12 @@ const Styles = styled.div`
 
 `;
 
-
-export const Jumbotron = () => (
+export const Jumbotron = (props) => (
     <Styles>
         <Jumbo fluid className="jumbo"> 
             <div className ="overlay"></div>
             <Container> 
-                <h1>Markentrepenad i Göteborg AB</h1>
+                <h1>{props.text}</h1>
                 <p>VI BYGGA BRA SAKER</p>
             </Container>
         </Jumbo>

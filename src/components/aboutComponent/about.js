@@ -1,13 +1,11 @@
 import React from 'react'
-import {Layout} from '../Layout';
+import {Jumbotron} from '../jumbotron';
+import {ImageContainer} from '../ImageContainer.js';
 
 export const About = () => (
-    <Layout>
-        <div>
-            <h2> Hello world</h2>
-        <p>Test</p>
-    </div>
-    </Layout>
- 
+    <React.Fragment>
+              <ImageContainer/>
+              <Jumbotron text="Vi slåss ibland" />
+    </React.Fragment>
 )
 export default About;
