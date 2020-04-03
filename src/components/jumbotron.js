@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
     .jumbo{
-        background-color:#4f4f4f;  
+        background-color:#282828;  
         background-size: cover;
         color: #DCDCDC;
         height: 200px;
@@ -14,7 +14,7 @@ const Styles = styled.div`
     }
     .overlay{
         background-color: #000;
-        opacity: 0.5;
+        opacity: 0.0;
         position:absolute;
         top: 0;
         left: 0;

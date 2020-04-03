@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
 const Styles = styled.div`
     .footer__container{
-      background-color:#4f4f4f;
+      background-color:#282828;
 
     } 
     .footer__container p{
@@ -17,6 +17,13 @@ const Styles = styled.div`
       color:#ffffff;
       font-size:0.7em;
     }
+    .row p {
+      font-size:0.65em;
+
+    }
+    .row{
+      margin:0.2em;
+    }
 
 
 `;
@@ -24,14 +31,10 @@ const Styles = styled.div`
 export const Footer = () => (
   <Styles>
       <React.Fragment>
-        <Container fluid className ="footer__container">
-          <Container className ="d-flex justify-content-center">
+        <Container fluid className ="footer__container ml-auto">
+          <Container className ="d-flex ml-auto">
            <Row>
             <Col>
-            <Row>
-              <p> Markentrepenad AB </p>
-             </Row>
-
              <Row>
               <p> Besöksadress: Syltvägen 10 , 419 23 Göteborg</p>
             </Row>
