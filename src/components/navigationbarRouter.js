@@ -48,7 +48,7 @@ class NavBar2 extends React.Component {
                                     <NavLink className="Nav__link" activeClassName="active" exact to="/">Hem</NavLink>
                                 </li>
                                 <li className="Nav__item">
-                                    <NavLink className="Nav__link" activeClassName="active" to="/about">Våra tjänster</NavLink>
+                                    <NavLink className="Nav__link" activeClassName="active" to="/vara-tjanster">Våra tjänster</NavLink>
                                 </li>
                                 <li className="Nav__item">
                                     <NavLink className="Nav__link" activeClassName="active" to="/sammarbetspartners">Sammarbetspartners</NavLink>
@@ -57,7 +57,7 @@ class NavBar2 extends React.Component {
                                     <NavLink className="Nav__link" activeClassName="active" to="/rotavdrag">Rotavdrag</NavLink>
                                 </li>
                                 <li className="Nav__item">
-                                    <NavLink className="Nav__link" activeClassName="active" to="/lufta-element">Lufta element</NavLink>
+                                    <NavLink className="Nav__link" activeClassName="active" to="/lufta-elements">Lufta element</NavLink>
                                 </li>
                                 <li className="Nav__item">
                                     <NavLink className="Nav__link" activeClassName="active" to="/contactPage">Kontakta oss</NavLink>

@@ -9,7 +9,7 @@ import NoMatch from './pages/noMatchPage';
 import LuftaElement from './pages/lufta-element';
 import Rotavdrag from './pages/rotavdrag';
 import Sammarbetspartners from './pages/sammarbetspartners';
-
+import OurServicesPage from './pages/ourService';
 
 //Components
 import NavigationBar from './components/navigationbar';
@@ -24,7 +24,7 @@ function App() {
         <NavBar2 />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/aboutPage" component={About} />
+          <Route exact path="/vara-tjanster" component={OurServicesPage} />
           <Route exact path="/contactPage" component={Contact} />
           <Route exact path="/lufta-element" component={LuftaElement} />
           <Route exact path="/rotavdrag" component={Rotavdrag} />
