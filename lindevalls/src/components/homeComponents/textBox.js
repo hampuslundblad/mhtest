@@ -9,7 +9,6 @@ const Styles = styled.div`
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    //Alignment
   }
 
   h1 {
