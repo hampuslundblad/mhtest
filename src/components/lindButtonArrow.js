@@ -27,7 +27,12 @@ const Styles = styled.div`
 function LindButtonArrow(props) {
   return (
     <Styles>
-      <NavLink className="Nav__link" activeClassName="active" exact to="/about">
+      <NavLink
+        className="Nav__link"
+        activeClassName="active"
+        exact
+        to={props.routeTo}
+      >
         <div className="btn d-flex flew-row justify-content-start">
           <div className="col-md-11">{props.btntext}</div>
           <div className="col-md-1">
