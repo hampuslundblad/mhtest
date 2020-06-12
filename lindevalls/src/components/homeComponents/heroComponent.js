@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import styled from "styled-components";
 /*import sinkImage from 'C:/Repo/Laptop/sham-wow/src/assets/pictures/sink.jpg';*/
-import sinkImage from '../../assets/pictures/toaC.jpg';
+import sinkImage from "../../assets/pictures/toaC.jpg";
 
 const Styles = styled.div`
 .hero-image{
@@ -60,22 +60,28 @@ const Styles = styled.div`
 
 `;
 
-const heroComponent = () => {
+const Hero = () => {
   return (
     <Styles>
       <div className="hero-image">
         <div className="img-underlay d-flex justify-content-center">
           <div className="text-container">
             <h1>Välkommen till Lindevalls Rör i Enköping!</h1>
-            <h2>Lindevall Rör är ett mindre familjeägt företag med lång erfarenhet av VVS-branschen.</h2>
-            <p>Våra certifierade montörer har bred kompetens inom allt från värmepumpar till traditionella rörmokerijobb såsom t.ex, rörinstallationer.</p>
+            <h2>
+              Lindevall Rör är ett mindre familjeägt företag med lång erfarenhet
+              av VVS-branschen.
+            </h2>
+            <p>
+              Våra certifierade montörer har bred kompetens inom allt från
+              värmepumpar till traditionella rörmokerijobb såsom t.ex,
+              rörinstallationer.
+            </p>
             <button>Kontakta oss</button>
-            <div className="text-underlay">
-            </div>
+            <div className="text-underlay"></div>
           </div>
         </div>
       </div>
     </Styles>
   );
 };
-export default heroComponent;
+export default Hero;
