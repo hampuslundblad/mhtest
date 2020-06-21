@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 /*import sinkImage from 'C:/Repo/Laptop/sham-wow/src/assets/pictures/sink.jpg';*/
 import sinkImage from "../assets/meeting.jpg";
@@ -8,7 +8,6 @@ const Styles = styled.div`
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(${sinkImage});
-
     /* Set a specific height */
     height: 32em;
 
@@ -17,12 +16,6 @@ const Styles = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border-top: 1px solid #707070;
-    border-bottom: 1px solid #707070;
-
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
   }
 
   .text-container {
@@ -65,18 +58,43 @@ const Styles = styled.div`
   }
 `;
 
-const heroComponent = () => {
-  return (
-    <Styles>
-      <div className="hero-image">
-        <div className="img-underlay d-flex justify-content-center">
-          <div className="text-container">
-            <h1>Moderna kommunikationslösningar för enklare vardag</h1>
-            <button>Kontakta oss</button>
+class heroComponent extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      offset: 100,
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.parallaxShift);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.parallaxShift);
+  }
+
+  parallaxShift = () => {
+    this.setState({
+      offset: window.pageYOffset,
+    });
+  };
+  render() {
+    return (
+      <Styles>
+        <div
+          className="hero-image"
+          // style={{ backgroundPositionY: this.state.offset }}
+        >
+          <div className="img-underlay d-flex justify-content-center">
+            <div className="text-container">
+              <h1>Moderna kommunikationslösningar för enklare vardag</h1>
+              <button>Kontakta oss</button>
+            </div>
           </div>
         </div>
-      </div>
-    </Styles>
-  );
-};
+      </Styles>
+    );
+  }
+}
 export default heroComponent;

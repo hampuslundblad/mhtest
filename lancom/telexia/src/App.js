@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./components/navbar";
+import Navbar from "./components/navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Pages'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Router>
-        <NavBar />
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/vara-tjanster" component={OurServices} />

@@ -1,75 +1,64 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import Logo from "../assets/logo.jpg";
-const Styles = styled.div`
-  .navbar {
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    width: 100%;
-    height: 5rem;
-  }
+import React, { useEffect, useState, useRef } from "react";
+//import Logo from "../assets/logo.jpg";
+import * as Scroll from "react-scroll";
+import "../assets/navbar.css";
 
-  .active {
-    transition: 0ms;
-  }
-  .logo {
-    width: 13.31rem;
-    height: 5rem;
-  }
+const Navbar = () => {
+  const [scrolled, setScrolled] = React.useState(false);
+  const [height, setHeight] = React.useState(0);
+  const ref = useRef(null);
 
-  .Nav__link {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    color: #585858;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    &:hover {
-      color: #2f557d;
-      transition: 250ms;
-      text-decoration: none;
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > height) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
     }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    setHeight(ref.current.clientHeight);
+  });
+  let navbarClasses = ["navbar"];
+  if (scrolled) {
+    navbarClasses.push("scrolled");
   }
-  .Nav__brand {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
-    color: #013765;
-  }
-`;
 
-const NavBar2 = ({}) => (
-  <Styles>
-    <nav className="navbar Nav__container  navbar-expand-lg d-flex">
-      <NavLink to="/" className="Nav__brand navbar-brand">
-        Telexia
-      </NavLink>{" "}
-      <div className="Nav__right d-flex" id="navbarSupportedContent">
-        <ul className="Nav__item-wrapper navbar-nav ">
-          <li className="Nav__item align-self-center">
-            <NavLink
-              className="Nav__link"
-              activeClassName="active"
-              exact
-              to="/vara-tjanster"
+  return (
+    <header className={navbarClasses.join(" ")} ref={ref}>
+      <nav className="navbar">
+        <div className="Nav__brand">Telexia</div>
+        <ul>
+          <li className="Nav__item ">
+            <Scroll.Link
+              activeClass="active"
+              className="test1"
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-2 * height}
             >
               Tjänster
-            </NavLink>
+            </Scroll.Link>
           </li>
-          <li className="Nav__item align-self-center">
-            <NavLink
-              className="Nav__link"
-              activeClassName="active"
-              to="/contact"
+          <li className="Nav__item">
+            <Scroll.Link
+              activeClass="active"
+              className="test1"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-height}
             >
               Kontakta oss
-            </NavLink>
+            </Scroll.Link>
           </li>
         </ul>
-      </div>
-    </nav>
-  </Styles>
-);
-export default NavBar2;
+      </nav>
+    </header>
+  );
+};
+export default Navbar;
