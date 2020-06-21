@@ -28,12 +28,18 @@ const Navbar = () => {
   return (
     <header className={navbarClasses.join(" ")} ref={ref}>
       <nav className="navbar">
-        <div className="Nav__brand">Telexia</div>
+        <div>
+          <a
+            className="Nav__brand"
+            onClick={() => Scroll.animateScroll.scrollToTop()}
+          >
+            Telexia
+          </a>
+        </div>
         <ul>
           <li className="Nav__item ">
             <Scroll.Link
               activeClass="active"
-              className="test1"
               to="services"
               spy={true}
               smooth={true}
@@ -46,7 +52,6 @@ const Navbar = () => {
           <li className="Nav__item">
             <Scroll.Link
               activeClass="active"
-              className="test1"
               to="contact"
               spy={true}
               smooth={true}

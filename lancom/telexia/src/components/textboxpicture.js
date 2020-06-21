@@ -47,8 +47,8 @@ function TextBoxPic() {
           <p>
             {" "}
             Telexia grundades 2014 i Enköping och vi är stolta medlemmar av
-            Ringup. ////Erbjuder helhetslösningar inom IT för både små och stora
-            företag.
+            Ringup. ////Erbjuder kommunkationslösningar inom IT för både små och
+            stora företag.
           </p>
         </div>
       </div>

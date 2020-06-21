@@ -25,10 +25,6 @@ const Styles = styled.div`
 `;
 
 class TextBoxServices extends React.Component {
-  constructor(props) {
-    super(props);
-    this.statsRef = React.createRef();
-  }
   render() {
     return (
       <Scroll.Element name="services">

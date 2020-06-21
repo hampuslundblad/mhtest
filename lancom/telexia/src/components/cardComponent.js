@@ -5,6 +5,8 @@ import mobdev from "../assets/book.png";
 import pic4 from "../assets/handpen.png";
 import styled from "styled-components";
 
+import * as Scroll from "react-scroll";
+
 const Styles = styled.div`
   .card-container {
     padding: 3em;
@@ -24,12 +26,22 @@ const Styles = styled.div`
     text-align: center;
   }
   .card-image-container img {
-    width: 70px;
+    width: 5rem;
   }
   .card-image-background {
-    background-color: #e2dfdf;
-    padding: 2.5rem;
+    /* background-color: #e2dfdf; */
+    background-color: #e0e0e0;
+
+    padding: 4rem;
+    box-sizing: border-box;
     border-radius: 50%;
+    border: 0.2rem solid transparent;
+    &:hover {
+      background-color: #e15108;
+      opacity: 1;
+      border: 0.2rem solid black;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -39,11 +51,20 @@ const CardComponent = () => {
       <Styles>
         <div className="card-wrapper d-flex justify-content-center">
           <div className="card-container">
-            <div className="card-image-container d-flex justify-content-center">
-              <div className="card-image-background">
-                <img src={webdev} alt="Card"></img>
+            <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-10}
+            >
+              <div className="card-image-container d-flex justify-content-center">
+                <div className="card-image-background">
+                  <img src={webdev} alt="Card"></img>
+                </div>
               </div>
-            </div>
+            </Scroll.Link>
             <div className="container-text">
               <h4>
                 <b>Telefoni </b>
@@ -51,11 +72,20 @@ const CardComponent = () => {
             </div>
           </div>
           <div className="card-container">
-            <div className="card-image-container d-flex justify-content-center">
-              <div className="card-image-background">
-                <img src={pendev} alt="Card"></img>
+            <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-10}
+            >
+              <div className="card-image-container d-flex justify-content-center">
+                <div className="card-image-background">
+                  <img src={pendev} alt="Card"></img>
+                </div>
               </div>
-            </div>
+            </Scroll.Link>
             <div className="container-text">
               <h4>
                 <b>Molntjänster och skrivarlösningar</b>
@@ -63,11 +93,20 @@ const CardComponent = () => {
             </div>
           </div>
           <div className="card-container">
-            <div className="card-image-container d-flex justify-content-center">
-              <div className="card-image-background">
-                <img src={mobdev} alt="Card"></img>
+            <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-10}
+            >
+              <div className="card-image-container d-flex justify-content-center">
+                <div className="card-image-background">
+                  <img src={mobdev} alt="Card"></img>
+                </div>
               </div>
-            </div>
+            </Scroll.Link>
             <div className="container-text">
               <h4>
                 <b>Körjournaler och tracking</b>
@@ -75,11 +114,20 @@ const CardComponent = () => {
             </div>
           </div>
           <div className="card-container">
-            <div className="card-image-container d-flex justify-content-center">
-              <div className="card-image-background">
-                <img src={pic4} alt="Card"></img>
+            <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={600}
+              offset={-10}
+            >
+              <div className="card-image-container d-flex justify-content-center">
+                <div className="card-image-background">
+                  <img src={pic4} alt="Card"></img>
+                </div>
               </div>
-            </div>
+            </Scroll.Link>
             <div className="container-text">
               <h4>
                 <b>Utbildning och supportavtal</b>

@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import Footer from "./components/Footer";
 //Pages'
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import OurServices from "./pages/OurServices";
 import NoMatch from "./pages/Home";
+
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
           <Route component={NoMatch} />
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }

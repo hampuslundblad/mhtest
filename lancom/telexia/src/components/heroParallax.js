@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 /*import sinkImage from 'C:/Repo/Laptop/sham-wow/src/assets/pictures/sink.jpg';*/
+import { animated, useSpring } from "react-spring";
 import sinkImage from "../assets/meeting.jpg";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 
 const Styles = styled.div`
   .hero-image {
@@ -12,7 +14,7 @@ const Styles = styled.div`
     height: 32em;
     margin-top: 5rem;
     /* Position and center the image to scale nicely on all screens */
-    /*  background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -21,7 +23,6 @@ const Styles = styled.div`
   .text-container {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1px;
-
     text-align: center;
     position: absolute;
     top: 50%;
@@ -45,56 +46,31 @@ const Styles = styled.div`
     margin-top: 1rem;
     font-size: 1.1rem;
   }
-
-  .img-container {
-    width: 10rem;
-    border-radius: 50%;
-  }
-
-  .img-container img {
-    margin-top: 6rem;
-    margin-left: 60rem;
-    z-index: -3;
-  }
 `;
 
-class heroComponent extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      offset: 10,
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.parallaxShift);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.parallaxShift);
-  }
-
-  parallaxShift = () => {
-    this.setState({
-      offset: window.pageYOffset,
-    });
-  };
-  render() {
-    return (
-      <Styles>
-        <div
-          className="hero-image"
-          //      style={{ backgroundPositionY: this.state.offset }}
-        >
+const Hero = () => {
+  return (
+    <Styles>
+      <Parallax pages={1}>
+        <ParallaxLayer
+          offset={0}
+          speed={0}
+          factor={1}
+          style={{
+            backgroundImage: { sinkImage },
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer offset={0} speed={0.5}>
           <div className="img-underlay d-flex justify-content-center">
             <div className="text-container">
               <h1>Moderna kommunikationslösningar för enklare vardag</h1>
               <button>Kontakta oss</button>
             </div>
           </div>
-        </div>
-      </Styles>
-    );
-  }
-}
-export default heroComponent;
+        </ParallaxLayer>
+      </Parallax>
+    </Styles>
+  );
+};
+export default Hero;
