@@ -2,12 +2,16 @@
   width: 100%;
   height: 45vh;
   display: flex;
-  padding-top: 10vh;
-  justify-content: space-evenly;
+  padding-top: 3rem;
+  justify-content: center;
   background-color: #263271;
   color: white;
+  margin-bottom: -5px;
 }
 
+.footer-wrapper div {
+  padding-right: 6rem;
+}
 .footer-wrapper h3 {
   font-size: 1.5em;
 }
@@ -39,12 +43,21 @@
 
 @media (max-width: 600px) {
   .footer-wrapper {
+    padding-top: 0;
+    height: 80vh;
+    align-items: start;
+    padding-left: 15%;
+  }
+  .footer-wrapper div {
+    padding-right: 0rem;
+  }
+  .footer-wrapper {
     flex-direction: column;
-    align-items: center;
   }
   .footer-about {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .footer-icons li img {
+    width: 1.8em;
   }
 }
