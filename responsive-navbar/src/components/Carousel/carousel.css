@@ -1,0 +1,10 @@
+.carouselWrap{
+    display: flex;
+    margin-top: 4%;
+    justify-content: center;
+}
+
+.bigWrap{
+    padding: 3%;
+ 
+}
