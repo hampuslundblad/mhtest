@@ -1,0 +1,15 @@
+.card-wrapper {
+  width: 20rem;
+}
+.picture {
+  width: 20rem;
+}
+
+.card-wrapper h3 {
+  font-size: 1.3em;
+}
+
+.card-wrapper p {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 //import image from "../assets/logo.jpg";
-import CardComponent from "../components/cardComponent";
+import CardComponent from "./cardComponent";
 //import { Card } from "react-bootstrap";
 import * as Scroll from "react-scroll";
 

@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <Styles>
       <footer className="wrapper">
-        <p>@ Telexia AB 2014</p>
+        <p>Telexia AB 2014</p>
       </footer>
     </Styles>
   );

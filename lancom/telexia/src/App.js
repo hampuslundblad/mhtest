@@ -10,7 +10,7 @@ import NoMatch from "./pages/Home";
 
 function App() {
   return (
-    <div>
+    <>
       <Router>
         <Navbar />
         <Switch>
@@ -20,8 +20,7 @@ function App() {
           <Route component={NoMatch} />
         </Switch>
       </Router>
-      <Footer />
-    </div>
+    </>
   );
 }
 

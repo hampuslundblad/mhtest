@@ -25,27 +25,28 @@ const Styles = styled.div`
   }
   text-container {
     margin-top: 1rem;
-    background-color: red;
   }
   .img-container {
   }
   .img-container img {
     width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
 function TextBoxPic() {
   return (
     <Styles>
-      <div className="textbox-wrapper d-flex justify-content-center">
-        <div className="img-container col-md-4">
+      <div className="textbox-wrapper d-flex justify-content-center ">
+        <div className="img-container col-md-5">
           <img src={image} alt="Ringup logo"></img>
         </div>
         <div className="text-container col-md-5">
           <h1>Vilka är vi?</h1>
 
           <p>
-            {" "}
             Telexia grundades 2014 i Enköping och vi är stolta medlemmar av
             Ringup. ////Erbjuder kommunkationslösningar inom IT för både små och
             stora företag.

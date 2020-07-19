@@ -9,7 +9,7 @@ const Styles = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(${sinkImage});
     /* Set a specific height */
-    height: 32em;
+    height: 32rem;
     margin-top: 5rem;
     /* Position and center the image to scale nicely on all screens */
     /*  background-position: center; */
@@ -88,7 +88,7 @@ class heroComponent extends React.Component {
         >
           <div className="img-underlay d-flex justify-content-center">
             <div className="text-container">
-              <h1>Moderna kommunikationslösningar för enklare vardag</h1>
+              <h1>Moderna kommunikationslösningar för en enklare vardag</h1>
               <button>Kontakta oss</button>
             </div>
           </div>

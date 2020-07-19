@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import TextBoxPic from "../components/textboxpicture";
 import TextBoxServices from "../components/textboxservices";
 import * as Scroll from "react-scroll";
+import Footer from "../components/Footer";
 
 const Styles = styled.div`
   .contact-box {
@@ -42,6 +43,7 @@ export default function Home() {
           <Contact />
         </div>
       </Scroll.Element>
+      <Footer />
     </Styles>
   );
 }
