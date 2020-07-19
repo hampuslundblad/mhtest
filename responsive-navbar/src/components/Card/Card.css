@@ -12,4 +12,5 @@
 .card-wrapper p {
   letter-spacing: 1px;
   word-spacing: 2px;
+  line-height: 1.5em;
 }

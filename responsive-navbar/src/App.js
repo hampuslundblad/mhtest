@@ -6,6 +6,7 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Service from "./components/Services/Service";
+import Footer from "./components/Footer/Footer";
 import "./index.css";
 
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
@@ -42,6 +43,7 @@ class App extends React.Component {
 
           <Service />
           <About />
+          <Footer />
         </main>
       </div>
     );

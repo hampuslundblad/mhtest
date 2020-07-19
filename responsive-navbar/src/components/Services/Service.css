@@ -21,7 +21,7 @@
   padding: 1%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .card-container {
     flex-direction: column;
     justify-content: center;
