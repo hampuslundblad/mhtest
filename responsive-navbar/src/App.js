@@ -5,7 +5,7 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-import Service from "./components/Services/Service";
+import Service from "./components/Service/Service";
 import Footer from "./components/Footer/Footer";
 import "./index.css";
 
