@@ -1,7 +1,21 @@
+.hover {
+  padding-bottom: 0.5rem;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
+    no-repeat;
+  transition: 0.6s background-size;
+  background-position: left bottom;
+}
+
+.hover:hover {
+  background-size: 100% 0.1em;
+}
+
 .logo {
-  width: 200px;
+  width: 250px;
 }
 .toolbar {
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+
   z-index: 10;
   width: 100%;
   position: fixed;
@@ -19,6 +33,7 @@
   align-items: center;
   height: 100%;
   padding: 0 1rem;
+  margin-right: 5%;
 }
 
 .toolbar__logo {
@@ -39,10 +54,14 @@
   display: flex;
 }
 
+/*****Skit fan**/
+
 .toolbar__navigation-items li {
   padding: 0 0.5rem;
+  padding-bottom: 0rem;
 }
 
+/*************/
 .toolbar__navigation-items a {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -51,7 +70,7 @@
 
 .toolbar__navigtaion-items a:hover,
 .toolbar__navigation-items a:hover {
-  color: black;
+  color: #8d1f62;
 }
 
 .spacer {

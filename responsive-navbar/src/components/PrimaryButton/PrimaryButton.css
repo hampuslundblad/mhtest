@@ -10,12 +10,14 @@
   background-color: #8d1f62;
   color: white;
   text-transform: uppercase;
+  transition: transform 0.2s; /* Animation */
 }
 
 .primary-button:hover {
-  background-color: white;
+  /*background-color: white;
   border: 1px solid black;
-  color: black;
+  color: black; */
+  transform: scale(1.1);
 }
 
 /* If the screen size is 601px wide or more */

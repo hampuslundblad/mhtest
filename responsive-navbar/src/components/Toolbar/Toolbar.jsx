@@ -1,7 +1,7 @@
 import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import logo from "../../assets/telexia-logo.png";
+import logo from "../../assets/Telexia.svg";
 import "./Toolbar.css";
 
 const Toolbar = (props) => (
@@ -20,11 +20,16 @@ const Toolbar = (props) => (
       <div className="toolbar__navigation-items">
         <ul>
           <li>
-            <a href="/">TJÄNSTER</a>
+            <a className="hover" href="/">
+              TJÄNSTER
+            </a>
           </li>
           <li>
-            <a href="/">KONTAKTA OSS</a>
+            <a className="hover" href="/">
+              KONTAKTA OSS
+            </a>
           </li>
+          <div className="underbar"></div>
         </ul>
       </div>
     </nav>

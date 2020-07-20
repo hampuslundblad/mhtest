@@ -7,10 +7,11 @@
 
 .card-wrapper h3 {
   font-size: 1.3em;
+  font-family: "Open Sans";
 }
 
 .card-wrapper p {
-  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   line-height: 1.5em;
 }
