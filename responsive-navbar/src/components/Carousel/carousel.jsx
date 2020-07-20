@@ -28,7 +28,7 @@ function ControlledCarousel(props) {
     );
 
 
-}
+};
 ControlledCarousel.defaultProps = {
     imgArray: "no pics in array",
     width: "100px",
@@ -37,7 +37,7 @@ ControlledCarousel.defaultProps = {
 ControlledCarousel.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
-}
+};
 
 
 export default ControlledCarousel;

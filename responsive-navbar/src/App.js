@@ -5,14 +5,14 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
+import Clients from "./components/Clients/clients";
 import Service from "./components/Service/Service";
-import Carousel from "./components/Carousel/carousel";
 import Footer from "./components/Footer/Footer";
 import "./index.css";
 
 import img1 from './assets/1.jpg';
 import img2 from './assets/2.png';
-const  ArrayOfImg =[img1, img2];
+const  ArrayOfImg =[img1, img2, img1, img2, img1, img1, img2];
 
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
 
@@ -47,8 +47,8 @@ class App extends React.Component {
           <Hero />
 
           <Service />
-          <Carousel imgArray={ArrayOfImg} height={"250px"} width={"250px"} />
           <About />
+          <Clients imgArray={ArrayOfImg} />
           <Footer />
         </main>
       </div>
