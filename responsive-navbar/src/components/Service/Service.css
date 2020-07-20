@@ -18,7 +18,7 @@
   flex-direction: row;
 }
 .card-container div {
-  padding: 1%;
+  padding: 2em;
 }
 
 @media (max-width: 900px) {

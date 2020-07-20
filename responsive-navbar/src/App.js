@@ -8,11 +8,13 @@ import About from "./components/About/About";
 import Service from "./components/Service/Service";
 import Carousel from "./components/Carousel/carousel";
 import Footer from "./components/Footer/Footer";
-import "./index.css";
+import Block from "./components/Block/Block";
 
-import img1 from './assets/1.jpg';
-import img2 from './assets/2.png';
-const  ArrayOfImg =[img1, img2];
+import "./App.css";
+
+import img1 from "./assets/1.jpg";
+import img2 from "./assets/2.png";
+const ArrayOfImg = [img1, img2];
 
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
 
@@ -47,8 +49,10 @@ class App extends React.Component {
           <Hero />
 
           <Service />
-          <Carousel imgArray={ArrayOfImg} height={"250px"} width={"250px"} />
-          <About />
+          <div className="block-test">
+            <Block background="#2B338B" />
+            <Block background="#74a5d7" />
+          </div>
           <Footer />
         </main>
       </div>
