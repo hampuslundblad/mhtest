@@ -3,8 +3,6 @@ import heroImage from "../../assets/meeting.jpg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import "./Hero.css";
 
-import Image from "react-bootstrap/Image";
-
 const hero = (props) => (
   <div
     className="hero"

@@ -1,7 +1,7 @@
 import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import logo from "../../assets/telexia-logo.png";
+import logo from "../../assets/Telexia.svg";
 import "./Toolbar.css";
 
 const Toolbar = (props) => (
