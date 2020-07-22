@@ -1,0 +1,11 @@
+
+
+.breakWrap{
+display: flex;
+justify-content: center;
+
+}
+
+.row{
+    display: flex;
+}
