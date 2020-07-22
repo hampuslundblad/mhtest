@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 
 
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
+//          <Block background="#74a5d7" />
 
 class App extends React.Component {
   state = {
