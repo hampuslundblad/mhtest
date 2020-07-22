@@ -10,9 +10,7 @@ function Card(props) {
     .join(" ");
 
   function whop(img) {
-    for (var i = 0; i < 5; i++) {
-      const a = <div></div>;
-    }
+    for (var i = 0; i < 5; i++) {}
   }
 
   return (

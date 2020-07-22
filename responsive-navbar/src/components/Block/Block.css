@@ -1,8 +1,16 @@
 .block-wrapper {
   width: 100%;
   height: 50vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .block-wrapper img {
   width: 40rem;
+}
+.text {
+  color: white;
+  height: 100%;
+  width: 25%;
+  text-align: center;
 }

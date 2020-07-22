@@ -13,9 +13,10 @@ import Block from "./components/Block/Block";
 
 import img1 from "./assets/1.jpg";
 import img2 from "./assets/2.png";
-const ArrayOfImg = [img1, img2, img1, img2, img1, img1, img2];
+const ArrayOfImg = [img2, img2, img2, img2, img2, img2, img2];
 
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
+//          <Block background="#74a5d7" />
 
 class App extends React.Component {
   state = {
@@ -50,10 +51,7 @@ class App extends React.Component {
           <Service />
 
           <Clients imgArray={ArrayOfImg} />
-          <div className="block-test">
-            <Block background="#2B338B" />
-            <Block background="#74a5d7" />
-          </div>
+          <div className="block-test"></div>
           <Footer />
         </main>
       </div>

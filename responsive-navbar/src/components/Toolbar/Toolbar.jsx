@@ -12,7 +12,9 @@ const Toolbar = (props) => (
       </div>
 
       <div className="toolbar__logo">
-        <img src={logo} alt="Telexia logga" className="logo" />{" "}
+        <a href="/">
+          <img src={logo} alt="Telexia logga" className="logo" />{" "}
+        </a>
       </div>
 
       <div className="spacer" />
