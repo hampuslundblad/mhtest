@@ -4,7 +4,7 @@
   display: flex;
   padding-top: 3rem;
   justify-content: center;
-  background-color: #1d1d1b;
+  background-color: #263271;
   color: white;
   margin-bottom: -5px;
 }
@@ -22,6 +22,7 @@
 .footer-contact ul li {
   padding: 0.2rem;
 }
+
 .footer-contact ul {
   list-style: none;
   margin: 0;

@@ -48,7 +48,7 @@ class App extends React.Component {
           <Hero />
 
           <Service />
-          <About />
+
           <Clients imgArray={ArrayOfImg} />
           <div className="block-test">
             <Block background="#2B338B" />

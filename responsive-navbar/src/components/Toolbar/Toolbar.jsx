@@ -21,12 +21,12 @@ const Toolbar = (props) => (
         <ul>
           <li>
             <a className="hover" href="/">
-              TJÄNSTER
+              Tjänster
             </a>
           </li>
           <li>
             <a className="hover" href="/">
-              KONTAKTA OSS
+              Kontakta oss
             </a>
           </li>
           <div className="underbar"></div>

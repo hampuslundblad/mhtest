@@ -10,11 +10,7 @@ import Card from "../Card/Card";
 
 const Service = (props) => (
   <div className="service-wrapper">
-    <BreakTitle
-      title="Vad är du intresserad av?"
-      titleColor="#263271
-"
-    />
+    <BreakTitle title="Vad är du intresserad av?" titleColor="#263271" />
     <div className="card-container">
       <Card
         img={pic1}
@@ -26,7 +22,11 @@ const Service = (props) => (
         title="Körjournaler"
         description="Tänk en körjournal som är helt automatisk, och att bara logga in på datorn eller appen för att ta fram körjournalen. Tänk att kunna positionera alla bilar i realtid på karta. Tänk en lösning med stöldskydd, ECO-driving och mycket mer. Kontakta oss för mer information "
       />
-      <Card img={pic3} title="IT-lösningar" description="" />
+      <Card
+        img={pic3}
+        title="IT-lösningar"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,"
+      />
     </div>
   </div>
 );

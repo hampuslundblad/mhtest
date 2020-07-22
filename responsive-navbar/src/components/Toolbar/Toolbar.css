@@ -2,7 +2,7 @@
   padding-bottom: 0.5rem;
   background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
     no-repeat;
-  transition: 0.6s background-size;
+  transition: 0.4s background-size;
   background-position: left bottom;
 }
 
@@ -33,7 +33,7 @@
   align-items: center;
   height: 100%;
   padding: 0 1rem;
-  margin-right: 5%;
+  margin-right: 1%;
 }
 
 .toolbar__logo {
@@ -63,9 +63,11 @@
 
 /*************/
 .toolbar__navigation-items a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open sans", sans-serif;
   color: black;
   text-decoration: none;
+  text-transform: none;
+  margin-right: 2em;
 }
 
 .toolbar__navigtaion-items a:hover,

@@ -16,13 +16,33 @@ const Footer = (props) => (
       </p>
       <ul className="footer-icons ">
         <li>
-          <img src={instagram} alt="instagram icon" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/"
+          >
+            <img src={instagram} alt="instagram icon" />
+          </a>
         </li>
         <li>
-          <img src={facebook} alt="facebook icon" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com"
+          >
+            <img src={facebook} alt="facebook icon" />
+          </a>
         </li>
         <li>
-          <img src={mail} alt="mail icon" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:info@ringupenkoping.se
+"
+          >
+            {" "}
+            <img src={mail} alt="mail icon" />
+          </a>
         </li>
       </ul>
     </div>

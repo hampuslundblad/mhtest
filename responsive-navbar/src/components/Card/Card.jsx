@@ -9,6 +9,12 @@ function Card(props) {
     .slice(2, props.description.length)
     .join(" ");
 
+  function whop(img) {
+    for (var i = 0; i < 5; i++) {
+      const a = <div></div>;
+    }
+  }
+
   return (
     <div className="card-wrapper">
       <img className="picture" src={props.img} alt="A service we offer" />
