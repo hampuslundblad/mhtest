@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
@@ -9,10 +10,11 @@ import Clients from "./components/Clients/clients";
 import Service from "./components/Service/Service";
 import Footer from "./components/Footer/Footer";
 import Block from "./components/Block/Block";
-import "./App.css";
-import img1 from './assets/1.jpg';
-import img2 from './assets/2.png';
-const  ArrayOfImg =[img1, img2, img1, img2, img1, img1, img2];
+
+import img1 from "./assets/1.jpg";
+import img2 from "./assets/2.png";
+const ArrayOfImg = [img1, img2, img1, img2, img1, img1, img2];
+
 //Guide från https://www.youtube.com/watch?v=l6nmysZKHFU&list=WL&index=17&t=0s
 
 class App extends React.Component {
