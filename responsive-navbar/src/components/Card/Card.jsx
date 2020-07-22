@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+import ArrowButton from "../ArrowButton/ArrowButton";
 import "./Card.css";
 
 function Card(props) {
@@ -21,6 +23,7 @@ function Card(props) {
         <b>{toBold}</b>
         {" " + rest}
       </p>
+      <ArrowButton />
     </div>
   );
 }
