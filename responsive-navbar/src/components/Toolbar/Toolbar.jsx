@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  Link
+} from "react-router-dom";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import logo from "../../assets/Telexia.svg";
@@ -20,18 +23,16 @@ const Toolbar = (props) => (
       <div className="toolbar__navigation-items">
         <ul>
           <li>
-            <a className="hover" href="/">
-              Tjänster
-            </a>
+            <Link to="/tja" className="hover">Tjänster</Link>
           </li>
           <li>
-            <a className="hover" href="/">
-              Kontakta oss
-            </a>
+
+            <Link className="hover" to="kontaktaoss">Kontakta oss</Link>
           </li>
           <div className="underbar"></div>
         </ul>
       </div>
+
     </nav>
   </header>
 );
