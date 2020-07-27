@@ -6,7 +6,8 @@
   justify-content: center;
   background-color: #263271;
   color: white;
-  margin-bottom: -5px;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-wrapper div {
