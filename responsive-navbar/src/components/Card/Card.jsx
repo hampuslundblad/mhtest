@@ -13,15 +13,18 @@ function Card(props) {
 
   return (
     <div className="card-wrapper">
-      <img className="picture" src={props.img} alt="A service we offer" />
+      <div className="img-wrapper">
+        <img className="picture" src={props.img} alt="A service we offer" />
+        <div className="img-overlay">
+          <span>Läs mer </span>
+        </div>
+      </div>
       <h3>{props.title}</h3>
 
       <p>
         <b>{toBold}</b>
         {" " + rest}
       </p>
-
-      <ArrowButton />
     </div>
   );
 }

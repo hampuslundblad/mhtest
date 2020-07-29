@@ -5,6 +5,46 @@
   width: 20rem;
   height: auto;
 }
+.card-wrapper > img {
+  border-radius: 2px;
+}
+/*
+.card-wrapper:hover > img {
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+*/
+.img-wrapper {
+  position: relative;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s ease;
+  background-color: rgba(139, 31, 98, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-overlay:hover {
+  background-color: rgba(139, 31, 98, 0.7);
+}
+.img-overlay > span {
+  opacity: 0;
+  transition: 0.45s ease-in-out;
+  font-family: "Open Sans";
+  font-size: 1.3rem;
+}
+.img-overlay:hover > span {
+  opacity: 1;
+}
 
 .card-wrapper > h3 {
   font-size: 1.3em;

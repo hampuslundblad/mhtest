@@ -1,8 +1,8 @@
 .arrow-btn {
-  background-color: #2b338b;
+  background-color: white;
   width: 10rem;
   border-radius: 24px;
-  color: white;
+  border: 1px solid black;
   font-family: "Open Sans";
   display: flex;
   align-items: center;

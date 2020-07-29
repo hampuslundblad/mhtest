@@ -14,22 +14,19 @@ import Card from "../Card/Card";
 const Service = (props) => (
   <div className="service-wrapper">
     <BreakTitle title="Vad är du intresserad av?" titleColor="#263271" />
+
     <div className="card-container">
       <Card
         img={pic1}
         title="Telefoni"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum "
+        description="Vi ringer och så ibland "
       />
       <Card
         img={pic2}
         title="Körjournaler"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum "
+        description="Köra bil köra bil köra bil bil bil"
       />
-      <Card
-        img={pic3}
-        title="IT-lösningar"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
-      />
+      <Card img={pic3} title="IT-lösningar" description="We da hackers mon" />
     </div>
   </div>
 );
