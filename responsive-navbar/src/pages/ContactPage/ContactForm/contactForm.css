@@ -1,37 +1,28 @@
 .contactForm {
-  display: flex;
-  flex-direction: column;
-}
-.form-row {
-  box-sizing: border-box;
-  padding-bottom: 1rem;
-}
-.form-row input {
-  width: 100%;
+  width: 22rem;
 }
 
-.submit-btn {
-  width: 100%;
+.form-control {
+  margin-bottom: 1.5rem;
 }
+
 /* Saker från codevelution*/
 label {
   font-weight: bold;
-  display: flex;
-  margin-bottom: 0.5rem;
+  font-family: Roboto;
+  color: #263271;
 }
-
-input + label {
-  font-weight: bold;
-  display: inline-flex;
-  margin-right: 1rem;
+.label {
+  padding-bottom: 0.5rem;
 }
 
 input[type="name"],
 input[type="email"],
 input[type="phone"],
+input[type="text"],
 textarea,
 select {
-  display: block;
+  box-sizing: border-box;
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -40,10 +31,28 @@ select {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 
+input[type="text"] {
+  padding: 2rem 1rem;
+}
 .error {
   color: red;
+  padding-top: 0.5rem;
+}
+button {
+  width: 100%;
+  border: 0px;
+  background-color: #8d1f62;
+  color: white;
+  font-weight: bold;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
 }
 /*****************************/
+@media (max-width: 600px) {
+  .contactForm {
+    width: 60vw;
+  }
+}

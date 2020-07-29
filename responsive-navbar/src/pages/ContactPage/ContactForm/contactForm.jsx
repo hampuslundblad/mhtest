@@ -7,24 +7,35 @@ const ContactForm = (props) => {
     name: "",
     email: "",
     phone: "",
-    msg: "",
+    text: "",
   };
+  function validate(values) {
+    //values.name values.email values.phone
+    // errors.name errors.email errors.phone
+    // errors.name = "This field is required"
+    let errors = {};
+
+    if (!values.name) {
+      errors.name = "Obligatoriskt";
+    }
+    if (!values.email) {
+      errors.email = "Obligatorsikt";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+    ) {
+      errors.email = " Ogiltig Epost";
+    }
+    if (!values.phone) {
+      errors.phone = "Obligatoriskt";
+    }
+    return errors;
+  }
 
   return (
     <div className="contactForm">
       <Formik
         initialValues={initialValues}
-        validate={(values) => {
-          const errors = {};
-          if (!values.email) {
-            errors.email = "Required";
-          } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          ) {
-            errors.email = "Invalid email address";
-          }
-          return errors;
-        }}
+        validate={validate}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
@@ -35,28 +46,36 @@ const ContactForm = (props) => {
         {({ isSubmitting }) => (
           <Form>
             <div className="form-control">
-              <label htmlFor="email">Email</label>
+              <div className="label">
+                <label htmlFor="email">E-post</label>
+              </div>
               <Field type="email" id="email" name="email" />
-              <ErrorMessage name="email" component="div" />
+              <ErrorMessage name="email" className="error" component="div" />
             </div>
             <div className="form-control">
-              <label htmlFor="name">Namn</label>
+              <div className="label">
+                <label htmlFor="name">Namn</label>
+              </div>
               <Field type="name" name="name" />
-              <ErrorMessage name="name" component="div" />
+              <ErrorMessage name="name" className="error" component="div" />
             </div>
             <div className="form-control">
-              <label htmlFor="phone">Telefonnummer</label>
+              <div className="label">
+                <label htmlFor="phone">Telefonnummer</label>
+              </div>
               <Field type="phone" name="phone" />
-              <ErrorMessage name="phone" component="div" />
+              <ErrorMessage name="phone" className="error" component="div" />
             </div>
             <div className="form-control">
-              <label htmlFor="msg">Meddelande</label>
-              <Field type="msg" name="msg" />
-              <ErrorMessage name="msg" component="div" />
+              <div className="label">
+                <label htmlFor="text">Meddelande</label>
+              </div>
+              <Field type="text" name="text" />
+              <ErrorMessage name="text" className="error" component="div" />
             </div>
 
             <button type="submit" disabled={isSubmitting}>
-              Submit
+              Skicka
             </button>
           </Form>
         )}

@@ -1,5 +1,21 @@
-.contact-form {
+.contact-wrapper {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+.contact-form {
+  justify-content: center;
   height: 100vh;
+  margin-top: 5rem;
+  padding: 0 5rem 0 5rem;
+}
+.contact-info {
+  padding: 0 5rem 0 5rem;
+}
+
+@media (max-width: 600px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
 }
