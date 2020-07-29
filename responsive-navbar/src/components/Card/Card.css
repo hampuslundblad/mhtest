@@ -6,13 +6,15 @@
   height: auto;
 }
 
-.card-wrapper h3 {
+.card-wrapper > h3 {
   font-size: 1.3em;
   font-family: "Open Sans";
 }
 
-.card-wrapper p {
+.card-wrapper > p {
+  text-align: left;
   font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   line-height: 1.5em;
+  font-size: 1rem;
 }

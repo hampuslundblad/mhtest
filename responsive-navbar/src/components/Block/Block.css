@@ -5,7 +5,7 @@
   flex-direction: row;
 }
 
-.block-wrapper img {
+.block-wrapper > img {
   width: 40rem;
 }
 .text {

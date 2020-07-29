@@ -17,7 +17,7 @@ const ContactUsInfo = (props) => {
     <div className="contact-info-wrapper">
       <h1 className="info-title">{props.city} </h1>
       <div className="container-icon info-row">
-        <i class="fas fa-phone-volume"></i>
+        <i class="fas fa-phone-square-alt"></i>
         {props.telephone}
       </div>
       <div className="container-icon info-row">
@@ -25,7 +25,7 @@ const ContactUsInfo = (props) => {
         {props.email}
       </div>
       <div className="info-row">
-        <ul style={{ listStyle: "none", padding: 0 }}>
+        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           <li>{props.street}</li>
           <li>{props.zip}</li>
         </ul>

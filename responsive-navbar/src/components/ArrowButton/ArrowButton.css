@@ -1,0 +1,43 @@
+.arrow-btn {
+  background-color: #2b338b;
+  width: 10rem;
+  border-radius: 24px;
+  color: white;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  /*text-transform: uppercase;*/
+  transition: transform 0.2s; /* Animation */
+  white-space: nowrap;
+}
+.arrow-btn:hover {
+  /*background-color: white;
+    border: 1px solid black;
+    color: black; */
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.arrow-btn:hover > i {
+  transform: translateX(5px);
+  animation-iteration-count: infinite;
+}
+.arrow-btn > p {
+  margin-left: 1rem;
+  font-size: 0.85rem;
+}
+.spacer {
+  flex: 1;
+}
+.arrow-btn > i {
+  transition-duration: 0.4s;
+  margin-left: 0.3rem;
+  padding-right: 1rem;
+}
+@media (max-width: 600px) {
+  .arrow-btn {
+    font-size: 0.8em;
+    width: 7rem;
+    height: 3rem;
+  }
+}

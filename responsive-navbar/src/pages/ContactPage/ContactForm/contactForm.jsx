@@ -70,7 +70,7 @@ const ContactForm = (props) => {
               <div className="label">
                 <label htmlFor="text">Meddelande</label>
               </div>
-              <Field type="text" name="text" />
+              <Field type="text" name="text" component="textarea" />
               <ErrorMessage name="text" className="error" component="div" />
             </div>
 

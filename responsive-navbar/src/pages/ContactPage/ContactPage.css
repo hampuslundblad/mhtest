@@ -3,10 +3,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 .contact-form {
-  justify-content: center;
-  height: 100vh;
+  max-height: 100vh;
   margin-top: 5rem;
   padding: 0 5rem 0 5rem;
 }
@@ -17,5 +19,10 @@
 @media (max-width: 600px) {
   .contact-wrapper {
     flex-direction: column;
+    align-items: center;
+  }
+  .contact-info {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }

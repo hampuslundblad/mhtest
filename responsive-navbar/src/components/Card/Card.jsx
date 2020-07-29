@@ -15,10 +15,12 @@ function Card(props) {
     <div className="card-wrapper">
       <img className="picture" src={props.img} alt="A service we offer" />
       <h3>{props.title}</h3>
+
       <p>
         <b>{toBold}</b>
         {" " + rest}
       </p>
+
       <ArrowButton />
     </div>
   );

@@ -50,7 +50,7 @@
     align-items: start;
     padding-left: 15%;
   }
-  .footer-wrapper div {
+  .footer-wrapper > div {
     padding-right: 0rem;
   }
   .footer-wrapper {
@@ -59,7 +59,7 @@
   .footer-about {
     width: 70%;
   }
-  .footer-icons li img {
+  .footer-icons > li > img {
     width: 1.8em;
   }
 }

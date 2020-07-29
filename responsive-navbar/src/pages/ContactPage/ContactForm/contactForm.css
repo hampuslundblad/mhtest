@@ -32,6 +32,9 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+textarea {
+  height: 6rem;
+}
 
 input[type="text"] {
   padding: 2rem 1rem;

@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+.contact-info-wrapper > h1 {
+  color: #263271;
+}
+
 .info-title {
   font-family: "Roboto";
 }
 
 .info-row {
-  padding: 1rem 1rem 0rem 1rem;
+  padding-top: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
@@ -15,17 +19,18 @@
 .container-icon {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.container-icon i {
+.container-icon > i {
   margin-right: 0.5rem;
 }
 
-.zip {
-  padding: 0rem 1rem 1rem 1rem;
-}
 @media (max-width: 600px) {
   .info-row {
     font-size: 1.2rem;
+  }
+  .info-title {
+    text-align: center;
   }
 }

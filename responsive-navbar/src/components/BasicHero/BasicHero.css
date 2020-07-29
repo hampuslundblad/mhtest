@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.hero__baisc img {
+.hero__baisc > img {
   object-fit: cover;
   width: 100vw;
 }
