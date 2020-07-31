@@ -31,13 +31,15 @@
 }
 
 .footer-icons {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .footer-icons li {
   display: inline-block;
-  padding-right: 3em;
 }
 .footer-icons li img {
   width: 3em;
@@ -59,6 +61,7 @@
   .footer-about {
     width: 70%;
   }
+
   .footer-icons > li > img {
     width: 1.8em;
   }
