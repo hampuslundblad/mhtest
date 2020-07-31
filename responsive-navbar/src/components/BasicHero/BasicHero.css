@@ -1,9 +1,8 @@
 .hero__basic {
   position: relative;
   width: 100%;
-  height: 28rem;
+  height: 32rem;
   background-size: cover;
-  overflow: hidden;
 }
 
 .hero__baisc > img {

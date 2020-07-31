@@ -3,10 +3,11 @@ import "./home.css";
 import Hero from "../../components/Hero/Hero";
 import Clients from "../../components/Clients/clients";
 import Service from "../../components/Service/Service";
-import Spacer from "../../components/Spacer/Spacer";
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/2.png";
+import Spacer from "../../components/Reusable/Spacer/Spacer";
+import img1 from "../../assets/ica.jpg";
+import img2 from "../../assets/ica.jpg";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import RingUp from "../../components/RingUp/RingUp";
 const ArrayOfImg = [img1, img2, img1, img2, img1, img1, img2];
 //<div className="block-test">
 //<Block background="#2B338B" />
@@ -15,7 +16,7 @@ const ArrayOfImg = [img1, img2, img1, img2, img1, img1, img2];
 
 export default function homePage() {
   return (
-    <main className="main" style={{ marginTop: "7rem" }}>
+    <main className="home-main" style={{ marginTop: "7rem" }}>
       <Hero />
       <Spacer />
       <Service />

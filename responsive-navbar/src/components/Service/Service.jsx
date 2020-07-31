@@ -13,7 +13,7 @@ import Card from "../Card/Card";
 
 const Service = (props) => (
   <div className="service-wrapper">
-    <BreakTitle title="Vad är du intresserad av?" titleColor="#263271" />
+    <BreakTitle titleColor="#263271">Vad är du intresserad av?</BreakTitle>
 
     <div className="card-container">
       <Card

@@ -17,11 +17,11 @@ const ContactUsInfo = (props) => {
     <div className="contact-info-wrapper">
       <h1 className="info-title">{props.city} </h1>
       <div className="container-icon info-row">
-        <i class="fas fa-phone-square-alt"></i>
+        <i className="fas fa-phone-square-alt"></i>
         {props.telephone}
       </div>
       <div className="container-icon info-row">
-        <i class="fas fa-envelope"></i>
+        <i className="fas fa-envelope"></i>
         {props.email}
       </div>
       <div className="info-row">

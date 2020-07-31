@@ -24,11 +24,7 @@ function ControlledCarousel(props) {
   return (
     <div className="bigWrap">
       {" "}
-      <BreakTitle
-        title="Ett urval av våra kunder:"
-        titleColor="#263271
-  "
-      />
+      <BreakTitle titleColor="#263271">Ett urval av våra kunder</BreakTitle>
       <div className="carouselWrap">
         <Carousel
           style={{ width: props.width, height: props.height }}

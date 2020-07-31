@@ -7,20 +7,18 @@ const BreakTitle = (props) => (
     className="title-wrapper"
   >
     <h1 style={{ borderBottom: "1px solid " + props.underlineColor }}>
-      {props.title}
+      {props.children}
     </h1>
   </div>
 );
 
 BreakTitle.defaultProps = {
-  title: "Default title",
   background: "#ffffff",
   titleColor: "#000000",
   underlineColor: "#ffffff",
 };
 
 BreakTitle.propTypes = {
-  title: PropTypes.string,
   background: PropTypes.string,
   titleColor: PropTypes.string,
   underlineColor: PropTypes.string,

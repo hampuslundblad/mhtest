@@ -19,7 +19,7 @@ function chunkArray(myArray, chunk_size) {
 function Clients(props) {
   const clientArray = props.imgArray.map((x) => (
     <img
-      classname="row"
+      className="row"
       style={{ width: props.width, height: props.height }}
       src={x}
       alt="no pics"
@@ -29,7 +29,7 @@ function Clients(props) {
   return (
     <div className="wrapper">
       <div className="breakWrap">
-        <BreakTitle title="Ett urval av våra kunder" titleColor="#263271" />
+        <BreakTitle titleColor="#263271">Ett urval av våra kunder</BreakTitle>
       </div>
       <div className="clientWrap">
         {clientRows.map((row) => (

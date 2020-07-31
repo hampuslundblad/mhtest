@@ -38,7 +38,7 @@ class App extends React.Component {
     }
     return (
       <React.Fragment>
-        <div className="main" style={{ height: "100%" }}>
+        <main className="main" style={{ height: "100%" }}>
           <Router>
             <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
             <SideDrawer show={this.state.sideDrawerOpen} />
@@ -50,8 +50,9 @@ class App extends React.Component {
               <Route component={NoMatch} />
             </Switch>
           </Router>
+
           <Footer />
-        </div>
+        </main>
       </React.Fragment>
     );
   }

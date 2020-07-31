@@ -4,5 +4,6 @@
   border-color: white;
 }
 
-.main {
+.home-main {
+  display: grid;
 }
