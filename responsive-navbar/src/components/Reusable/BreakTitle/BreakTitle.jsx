@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./BreakTitle.css";
-
 const BreakTitle = (props) => (
   <div
     style={{ backgroundColor: props.background, color: props.titleColor }}

@@ -1,3 +1,8 @@
-body {
-  overflow-x: hidden;
+.main__title {
+  font-family: "Roboto";
+  color: #263271;
+}
+* {
+  /* font-family: "Work Sans", sans-serif; */
+  font-family: "Work Sans", sans-serif;
 }

@@ -2,17 +2,15 @@
   display: flex;
   flex-direction: column;
 }
-.contact-info-wrapper > h1 {
-  color: #263271;
-}
 
 .info-title {
-  font-family: "Roboto";
+  font-family: "Work sans";
+  color: #263271;
 }
 
 .info-row {
   padding-top: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;
 }
 

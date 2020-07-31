@@ -38,7 +38,7 @@ class App extends React.Component {
     }
     return (
       <React.Fragment>
-        <div style={{ height: "100%" }}>
+        <div className="main" style={{ height: "100%" }}>
           <Router>
             <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
             <SideDrawer show={this.state.sideDrawerOpen} />

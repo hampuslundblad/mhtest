@@ -6,7 +6,7 @@ import mail from "../../assets/mail.png";
 //Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 //Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 const Footer = (props) => (
-  <div className="footer-wrapper">
+  <footer className="footer-wrapper">
     <div className="footer-about">
       <h3>Om oss</h3>
       <p>
@@ -60,7 +60,7 @@ const Footer = (props) => (
         <li>749 42 Enköping</li>
       </ul>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

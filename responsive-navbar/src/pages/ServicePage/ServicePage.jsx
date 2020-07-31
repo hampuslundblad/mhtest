@@ -1,10 +1,13 @@
 import React from "react";
+import "./ServicePage.css";
 
 function ServicePage(props) {
   return (
-    <div>
-      <h2>Våra tjänster</h2>
-    </div>
+    <main className="service-main" style={{ marginTop: "7rem" }}>
+      <div>
+        <h2>Våra tjänster</h2>
+      </div>
+    </main>
   );
 }
 

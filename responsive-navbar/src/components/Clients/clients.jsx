@@ -1,6 +1,6 @@
 import React from "react";
 import "./clients.css";
-import BreakTitle from "../BreakTitle/BreakTitle";
+import BreakTitle from "../Reusable/BreakTitle/BreakTitle";
 import PropTypes from "prop-types";
 
 function chunkArray(myArray, chunk_size) {

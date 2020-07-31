@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../../assets/meeting.jpg";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import PrimaryButton from "../Reusable/PrimaryButton/PrimaryButton";
 import "./Hero.css";
 
 const hero = (props) => (
@@ -12,7 +12,7 @@ const hero = (props) => (
   >
     <div className="hero__text">
       <h1>Moderna kommunikationslösningar för en enklare vardag. </h1>
-      <PrimaryButton text="Kontakta oss" />
+      <PrimaryButton text="Kontakta oss" to="kontakt" />
     </div>
   </div>
 );

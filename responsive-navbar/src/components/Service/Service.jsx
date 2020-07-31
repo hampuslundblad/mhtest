@@ -5,7 +5,7 @@ import pic2 from "../../assets/pic2.jpg";
 import pic3 from "../../assets/pic3.jpg";
 
 import "./Service.css";
-import BreakTitle from "../BreakTitle/BreakTitle";
+import BreakTitle from "../Reusable/BreakTitle/BreakTitle";
 import Card from "../Card/Card";
 
 //        description="Vi på Telexia är specialister på allt inom företagstelefoni och våra skräddarsydda lösningar täcker alltifrån mobila och fasta företagsabonnemang och företagstelefoner, till växelsystem och IP-telefoni. Telexia analyserar ditt företag och ger dig en lösning med utgångspunkt från era behov och önskemål. "

@@ -11,6 +11,7 @@ function ContactPage(props) {
       <BasicHero title="Kontakta oss" image={heroImg} />
       <div className="contact-wrapper">
         <div className="contact-form">
+          <h2 className="main__title"> Skriv till oss!</h2>
           <ContactFrom />
         </div>
         <div className="contact-info">
