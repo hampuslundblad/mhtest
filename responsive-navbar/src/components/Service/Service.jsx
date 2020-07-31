@@ -19,14 +19,21 @@ const Service = (props) => (
       <Card
         img={pic1}
         title="Telefoni"
-        description="Vi ringer och så ibland "
+        description="Vi ordnar en komplett telefonilösning, med eller utan hårdvara! "
+        to="vara-tjanster"
       />
       <Card
         img={pic2}
         title="Körjournaler"
-        description="Köra bil köra bil köra bil bil bil"
+        description="Med RingUps körjournal får du full koll på alla företagsbilar"
+        to="vara-tjanster"
       />
-      <Card img={pic3} title="IT-lösningar" description="We da hackers mon" />
+      <Card
+        img={pic3}
+        title="IT-lösningar"
+        description="Med vår "
+        to="vara-tjanster"
+      />
     </div>
   </div>
 );
